@@ -16,7 +16,6 @@ x_all = []
 y_all = []
 
 for index in range(start_date_index,end_date_index):
-<<<<<<< HEAD
 	start_day = trading_days[index - 30]
 	end_day = trading_days[index]
 	stock_data = get_price(test_stock,start_date=start_day,end_date=end_day,frequency='daily',fields=['close'])
@@ -38,7 +37,7 @@ for index in range(start_date_index,end_date_index):
 		label = True
 	x_all.append(features)
 	y_all.append(label)
-=======
+    
   start_day = trading_days[index - 30]
   end_day = trading_days[index]
   stock_data = get_price(test_stock,start_date=start_day,end_date=end_day,frequency='daily',fields=['close'])
@@ -60,7 +59,6 @@ for index in range(start_date_index,end_date_index):
     label = True
   x_all.append(features)
   y_all.append(label)
->>>>>>> 强撸一个SVM:joy:
 
 #准备算法需要用到的数据
 x_train = x_all[:-1]
